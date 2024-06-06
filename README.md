@@ -32,3 +32,19 @@ Para el repositorio remoto
 Para instalar filamentphp se hace lo siguiente:
  - composer update
  - composer require filament/filament:"^3.2" -W
+ - php artisan filament:install --panels
+
+Nos va a preguntar sobre el ID y por lo general se coloca admin o dashboard, vamos a utilizar dashboard
+
+Luego ejecutamos el comando
+
+ - php artisan migrate
+
+Creamos nuestro usuario con el comando
+
+ - php artisan make:filament-user
+
+user: KBRGarcia
+email: kbrgarcia@gmail.com
+password: 123456789
+
